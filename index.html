@@ -6,88 +6,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <body>
 <div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <a class="navbar-brand" href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create New Post
+        </button>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accessablility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy & Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Modal -->
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create New Post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Caption
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Publish</button>
+            </div>
           </div>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
 
      <!-- Nav Tabs -->
-     <ul class="nav nav-tabs" id="myTab" role="tablist">
+     
+     <ul class="nav nav-tabs d-flex justify-content-center" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Home</button>
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true"><i class="fa-solid fa-table-cells"></i></button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false"><i class="fa-solid fa-square"></i></button>
         </li>
-        
       </ul>
+  
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
             <!-- view 1 -->
             <div class="container text-center">
                 <div class="row mt-3">
                     <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/300x300" class="img-thumbnail object-fit-cover" alt="...">
+                        <img src="https://picsum.photos/200/200?random=1" class="img-thumbnail object-fit-cover" alt="...">
                     </div>
                     <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/300x300" class="img-thumbnail object-fit-cover" alt="...">
+                        <img src="https://picsum.photos/200/200?random=2" class="img-thumbnail object-fit-cover" alt="...">
                     </div>
                     <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/300x300" class="img-thumbnail object-fit-cover" alt="...">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/300x300" class="img-thumbnail object-fit-cover" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/300x300" class="img-thumbnail object-fit-cover" alt="...">
-                    </div>
-                    <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/300x300" class="img-thumbnail object-fit-cover" alt="...">
+                        <img src="https://picsum.photos/200/200?random=3" class="img-thumbnail object-fit-cover" alt="...">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/300x300" class="img-thumbnail object-fit-cover" alt="...">
+                        <img src="https://picsum.photos/200/200?random=4" class="img-thumbnail object-fit-cover" alt="...">
                     </div>
                     <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/300x300" class="img-thumbnail object-fit-cover" alt="...">
+                        <img src="https://picsum.photos/200/200?random=5" class="img-thumbnail object-fit-cover" alt="...">
                     </div>
                     <div class="col-md-4">
-                        <img src="https://source.unsplash.com/random/300x300" class="img-thumbnail object-fit-cover" alt="...">
+                        <img src="https://picsum.photos/200/200?random=6" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=7" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=8" class="img-thumbnail object-fit-cover" alt="...">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="https://picsum.photos/200/200?random=9" class="img-thumbnail object-fit-cover" alt="...">
                     </div>
                 </div>
             </div>
@@ -100,31 +113,85 @@
                 <div class="col-md-4">
                     <div class="card mt-3" style="width: 18rem;">
                         <div class="card-header">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">samsung</h5>
                         </div>
-                        <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+                        <img src="https://picsum.photos/200/200?random=10" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text">running.</p>
                         </div>
                       </div>
                       <div class="card mt-3" style="width: 18rem;">
                         <div class="card-header">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">rabbit</h5>
                         </div>
-                        <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+                        <img src="https://picsum.photos/200/200?random11" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text">jumping.</p>
                         </div>
                       </div>
                       <div class="card mt-3" style="width: 18rem;">
                         <div class="card-header">
-                            <h5 class="card-title">Card title</h5>
+                            <h5 class="card-title">furniture</h5>
                         </div>
-                        <img src="https://source.unsplash.com/random" class="card-img-top" alt="...">
+                        <img src="https://picsum.photos/200/200?random=12" class="card-img-top" alt="...">
                         <div class="card-body">
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <p class="card-text">swimming.</p>
                         </div>
                       </div>
+                      <div class="card mt-3" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">window</h5>
+                        </div>
+                        <img src="https://picsum.photos/200/200?random=13" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">fighting.</p>
+                        </div>
+                      </div> 
+                      <div class="card mt-3" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">Door</h5>
+                        </div>
+                        <img src="https://picsum.photos/200/200?random=14" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">walking.</p>
+                        </div>
+                      </div> 
+                      <div class="card mt-3" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">tree</h5>
+                        </div>
+                        <img src="https://picsum.photos/200/200?random=15" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">fruit.</p>
+                        </div>
+                      </div>
+                      <div class="card mt-3" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">Lion</h5>
+                        </div>
+                        <img src="https://picsum.photos/200/200?random=16" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">Herb.</p>
+                        </div>
+                      </div>
+                      <div class="card mt-3" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">dog</h5>
+                        </div>
+                        <img src="https://picsum.photos/200/200?random=17" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">bone.</p>
+                        </div>
+                      </div> 
+                      <div class="card mt-3" style="width: 18rem;">
+                        <div class="card-header">
+                            <h5 class="card-title">elephant</h5>
+                        </div>
+                        <img src="https://picsum.photos/200/200?random=18" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">grass.</p>
+                        </div>
+                      </div>  
                 </div>
                 <div class="col-md-4"></div>
             </div>
